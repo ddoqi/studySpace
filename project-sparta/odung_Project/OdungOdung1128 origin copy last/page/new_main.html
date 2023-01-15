@@ -1,0 +1,140 @@
+<!-- <div class="modal hidden"> -->
+<div class="modal hidden">
+    <div class="modal_overlay" onclick="closeModal()"></div>
+    <div class="modal_content">
+        <div class="modal_box">
+            <div class="modal_header">뉴스피드 등록</div>
+            <div class="dropdown">
+                <button class="modal_dropbtn" onclick="modaldropdown()">
+                    <span class="modal_dropbtn_icon">more_horiz</span>
+                    <!-- 🌸🌸🌸🌸🌸🌸🌸키워드 데려오기🌸🌸🌸🌸🌸🌸🌸🌸 -->
+                    <span class="modal_dropbtn_content">#Keyword...</span>
+                    <span class="modal_dropbtn_click" style="
+                      font-family: Material Icons;
+                      font-size: 16px;
+                      color: #3b3b3b;
+                      float: right;">arrow_drop_down</span>
+                </button>
+                <div class="modal_dropdown_content">
+                    <div class="drop_keyword" onclick="modalshowMenu(this.innerText)">
+                        #운동
+                    </div>
+                    <div class="drop_keyword" onclick="modalshowMenu(this.innerText)">
+                        #개발공부
+                    </div>
+                    <div class="drop_keyword" onclick="modalshowMenu(this.innerText)">
+                        #카페
+                    </div>
+                    <div class="drop_keyword" onclick="modalshowMenu(this.innerText)">
+                        #인스턴트
+                    </div>
+                    <div class="drop_keyword" onclick="modalshowMenu(this.innerText)">
+                        #게임
+                    </div>
+                    <div class="drop_keyword" onclick="modalshowMenu(this.innerText)">
+                        #오둥이
+                    </div>
+                    <div class="drop_keyword" onclick="modalshowMenu(this.innerText)">
+                        #잡담
+                    </div>
+                </div>
+            </div>
+            <div class="modal_user">
+                <div class="modal_user_box">
+                    <div class="modal_user_pic">
+                        <img class="cmtImg" src="" id="cmtImg"/>
+                    </div>
+                    <div class="modal_user_nickname">
+                        <span id="nickname1">닉네임 없음</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <textarea class="modal_textarea" id="post"></textarea>
+            </div>
+            <div class="btn_box">
+                <button class="com_btn" onclick="save_post()">게시</button>
+                <button class="close_modal close_btn" onclick="closeModal()">
+                    닫기
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- new feed modal -->
+<div id="modal_post_container" class="hidden">
+</div>
+
+
+<!-- <section id="mypage_container"> -->
+<section id="post_container">
+    <div id="write_wrap" class="flex">
+        <a onclick="openModal()" title="글쓰기" class="wirte_btn btn">글쓰기</a>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="dropdown()">
+                <span class="dropbtn_icon">more_horiz</span>
+                <!-- keyword 앞에 대문자로 수정 -->
+                <span class="dropbtn_content">#Keyword...</span>
+                <span class="dropbtn_click" style="
+                font-family: Material Icons;
+                font-size: 16px;
+                color: #3b3b3b;
+                float: right;">arrow_drop_down</span>
+            </button>
+            <div class="dropdown-content">
+                <div class="drop_keyword" onclick="showMenu(this.innerText)">
+                    #운동
+                </div>
+                <div class="drop_keyword" onclick="showMenu(this.innerText)">
+                    #개발공부
+                </div>
+                <div class="drop_keyword" onclick="showMenu(this.innerText)">
+                    #카페
+                </div>
+                <div class="drop_keyword" onclick="showMenu(this.innerText)">
+                    #인스턴트
+                </div>
+                <div class="drop_keyword" onclick="showMenu(this.innerText)">
+                    #게임
+                </div>
+                <div class="drop_keyword" onclick="showMenu(this.innerText)">
+                    #오둥이
+                </div>
+                <div class="drop_keyword" onclick="showMenu(this.innerText)">
+                    #기타
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 메인게시물 1개씩만 쭈르륵 나오는거 처리!! -영진 -->
+    <form method="get" id="post-list" action="" class="my_post flex">
+        <!-- <div id="post_wrap" onclick="feed_openModal()">
+            <div class="post_top_wrap">
+                <div class="profile">
+                    <a class="nickname" href="#" title="nickname" target="_blank">홍길동</a>
+                </div>
+                <div class="category_wrap">
+                    <p class="category">#hashTag</p>
+                </div>
+            </div>
+            <div class="text_box">
+            </div>
+            <div class="revise_wrap hide">
+                <input type="submit" value="수정" class="editBtn" onclick="onEditing()"/>
+                <input type="submit" value="삭제" class="deleteBtn" onclick="delete_post()"/>
+            </div>
+        </div> -->
+    </form>
+</section>
+
+<!-- 상단 바로가기 버튼 -->
+<a class="top_btn top" href="#main" title="사이트 상단이동" onclick="openModal()">
+    <p>Write</p>
+    <i class="fa-solid fa-pen"></i>
+</a>
+
+<a class="top_btn write" href="#main" title="사이트 상단이동" onclick="javascript:window.scrollTo(0,0)">
+    <p>Top</p>
+    <i class="fa-solid fa-chevron-up"></i>
+</a>

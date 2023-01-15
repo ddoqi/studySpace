@@ -1,0 +1,66 @@
+
+
+<h2> 개인 프로파일 페이지입니다. </h2>
+
+<div id="profilePage">
+    <section id="profileWrapper">
+        <h2>프로필 관리</h2>
+        <form id="profileForm" onsubmit="changeProfile(event)">
+
+            <!-- label로 묶어놓으면 라벨에 묶여있는 영역 아무데나 클릭해도 imgInput를 클릭한 효과를 준다  -->
+            <label id="imgLabel" for="imgInput">
+                <img id="profileView" src="/pictures/base1.jpg" />
+                <input onchange="onFileChange(event)" id="imgInput" type="file" accept="images/*" />
+            </label>
+            <div>
+                <input id="profileNickname" type="text" placeholder="현재 닉네임" value="" />
+            </div>
+            <br />
+            <input id="profileBtn" type="submit" value="프로필 변경" />
+        </form>
+    </section>
+</div>
+
+
+<div>
+    <h1>게시물 작성</h1>
+    <form>
+        <div>
+            <select id="keyword">
+                <option value="cate1">카테고리1</option>
+                <option value="cate2">카테고리2</option>
+                <option value="cate3">카테고리3</option>
+            </select>
+        </div>
+        <div>글쓴이 : <span id="userName"> 사용자 닉네임 </span></div>
+        <div>글내용: <input type="text" id="boardcontent"></div>
+        <button type="button" onclick="save_board(event)"">글 작성하기</button>
+    </form>
+
+    <hr/>
+
+    <div>
+        <h1>게시물 불러오기</h1>
+        <div id="boardList">
+        </div>
+    </div>
+
+    <hr/>
+
+    <div>
+        <h1> 카테고리 검색시 해당 게시물만 불러오기</h1>
+        <div>
+            <!-- <input type="text" id="cateSearchbar"> -->
+            <select id="cateSearchbar">
+                <option value="cate1">카테고리1</option>
+                <option value="cate2">카테고리2</option>
+                <option value="cate3">카테고리3</option>
+            </select>
+            <button type="button" onclick="SearchCate()">검색</button>
+        </div>
+        <div id="cateBoardList">
+            해당 카테고리를 선택하면 이 부분이 바뀔거라능 
+        </div>
+    </div>
+
+</div>

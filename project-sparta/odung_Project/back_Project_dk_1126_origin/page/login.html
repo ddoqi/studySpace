@@ -1,0 +1,83 @@
+ <div class="login_background"></div>
+  <div id="login_container">
+    <div id="login_wrap">
+      <h1 id="login_title">Login</h1>
+   
+        <form onsubmit="loginAction(event)" id="login_form">
+        <fieldset>
+          <div class="email_wrap">
+            <input
+              type="text"
+              id="email"
+              label="email_area"
+              placeholder="이메일을 입력해주세요."
+              class="shadow_input"
+            />
+          </div>
+          <div class="password_wrap">
+            <input
+              type="password"
+              id="pw"
+              label="password_area"
+              placeholder="비밀번호를 입력해주세요."
+              class="shadow_input"
+            />
+          </div>
+          <label for="id_remmeber_check">
+            <div class="checkbox_wrap">
+              <input type="checkbox" id="id_remmeber_check" />
+              <p>아이디 기억하기</p>
+            </div>
+          </label>
+
+          <div class="find_wrap">
+            <!-- target="_blank" -->
+            <a href="#main" title="로그인 찾기 페이지로" class="find_id">아이디 찾기</a>
+            <a
+              href="#"
+              title="비밀번호 찾기 페이지로"
+              target="_blank"
+              class="find_pw"
+              >비밀번호 찾기</a
+            >
+           
+            <p class="find_pw" onclick="moveJoinPage()">회원가입 하기 </p>
+          </div>
+
+          <input
+            type="submit"
+            id="login_submit"
+            class="normal_login"
+            value="Login"
+          />
+
+          <p class="simple_login_title">간편 로그인</p>
+          <!-- <input
+            type="submit"
+            id="login_submit"
+            class="github_login"
+            value="With Github"
+          />
+          <input
+            type="submit"
+            id="login_submit"
+            class="google_login"
+            value="With Google"
+          /> -->
+
+          <section class="socialBtns">
+            <button name="google" onclick="socialLogin(event)" id="login_submit"
+            class="github_login">Google Login</button>
+            <button name="github" onclick="socialLogin(event)" id="login_submit"
+            class="google_login">Github Login</button>
+          </section>
+
+
+
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+<!-- 아이디 찾기, 비밀번호 찾기 기능 구현 해보기 -->
+<!-- 회원가입 버튼 추가 -->

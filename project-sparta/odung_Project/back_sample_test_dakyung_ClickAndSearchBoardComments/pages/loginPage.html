@@ -1,0 +1,25 @@
+<div id="loginPage">
+    <div id="loginWrapper">
+        <h1 id="loginTitle">로그인 페이지</h1>
+
+        <form onsubmit="loginAction(event)">
+            <div class="loginInput">
+                <div>EMAIL:</div>
+                <input id="email" type="text" />
+            </div>
+            <div class="loginInput">
+                <div>PW:</div>
+                <input id="pw" type="password" />
+            </div>
+
+            <section id="loginBtnSection">
+                <input type="submit" id="loginBtn" value="로그인" />
+                <p onclick="moveJoinPage()">회원가입하러가기</p>  
+            </section>
+        </form>
+        
+        <section class="socialBtns">
+            <button name="google" onclick="socialLogin(event)">Google Login</button>
+            <button name="github" onclick="socialLogin(event)">Github Login</button>
+        </section> 
+    </div>

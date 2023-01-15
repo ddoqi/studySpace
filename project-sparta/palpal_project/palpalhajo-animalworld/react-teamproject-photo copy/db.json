@@ -1,0 +1,28 @@
+{
+  "board": [
+    {
+      "id": "f38b5bf8-34ca-4c73-9e44-5669f6eea5d5",
+      "user": "dfdf",
+      "pw": "dfdf",
+      "title": "dfdf",
+      "content": "dfdf",
+      "ImgUrl": "https://firebasestorage.googleapis.com/v0/b/palpalhajo.appspot.com/o/images%2F67351221-b9aa-49cf-bd01-7d905f46b9e1?alt=media&token=9277e864-afcd-4924-bfec-d0be05fc4315"
+    },
+    {
+      "id": "66ee88cf-2a51-4324-a0aa-067f2d506408",
+      "user": "ㅇㄹ",
+      "pw": "ㅇㄹ",
+      "title": "ㅇㄹ",
+      "content": "ㅇㄹ",
+      "ImgUrl": "https://firebasestorage.googleapis.com/v0/b/palpalhajo.appspot.com/o/images%2F693b2004-d1f3-4faa-9d1d-a6e6d767d55e?alt=media&token=206cb300-cfbd-473b-b86b-7c43ecbb7c97"
+    },
+    {
+      "id": "01e650be-f3c8-481e-a2c5-56fdaa538fd1",
+      "user": "안밀리징?",
+      "pw": "df",
+      "title": "df",
+      "content": "df",
+      "ImgUrl": "https://firebasestorage.googleapis.com/v0/b/palpalhajo.appspot.com/o/images%2Fcb6398ff-3472-4cfe-813c-7f1f43ba8ff5?alt=media&token=4a23fbac-99d1-480d-ad4f-99dfcbe9d9b9"
+    }
+  ]
+}
