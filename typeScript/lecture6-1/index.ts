@@ -88,8 +88,9 @@ getItemArray(난스트링배열이양, 0);
 pushItemArray(난스트링배열이양, "날푸쉬해죵");
 
 getItemArray(난숫자배열이양, 0);
-pushItemArray(난숫자배열이양, "날푸쉬해죵");
+pushItemArray(난숫자배열이양, 3);
 // 위 코드가 에러난 이유가 머징?
+// 이유 : 난숫자배열이양 배열은 숫자array였기때문!!!
 
 // 아래처럼 코드를 짜면 에러가 난다.
 // 이유 : Input타입이 배열이나 string으로 들어오면 length를 쓸 수 있지만
