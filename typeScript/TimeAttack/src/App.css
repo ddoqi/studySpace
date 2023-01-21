@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background: yellowgreen;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-wrapper {
+  background-color: white;
+  min-width: 450px;
+  min-height: 650px;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.header h1 {
+  color: black;
+  text-align: center;
+  margin: 30px 0;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.task-input {
+  outline: none;
+  width: 260px;
+  padding: 15px;
+  margin-right: 25px;
+  font-size: 20px;
+  color: white;
+  background-color: lightgreen;
+  border-radius: 10px;
+  width: 500px;
+}
+
+.button-add {
+  width: 100px;
+  padding: 15px 15px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 0;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+
+.button-add:hover {
+  background-color: pink;
+}
+
+.list-item {
+  display: flex;
+  margin: 20px 0;
+  border: 1px solid black;
+  border-radius: 10px;
+  color: black;
+  width: 600px;
+  padding: 10px;
+  max-height: 30px;
+  justify-content: space-around;
+}
+
+.button-complete,
+.button-delete {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 50px;
+  height: 30px;
+  cursor: pointer;
+  margin: 5px;
+  color: white;
+  background-color: green;
+  position: relative;
+  left: 60px;
+  bottom: 5px;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+.editTrue {
+  display: block;
+}
+
+.editFalse {
+  display: none;
+}
