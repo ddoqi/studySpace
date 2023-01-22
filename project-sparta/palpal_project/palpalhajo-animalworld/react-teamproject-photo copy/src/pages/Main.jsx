@@ -16,6 +16,14 @@ const Main = () => {
     dispatch(__getBoards());
   }, [dispatch]);
 
+  const { data, isError, error, isLoading } = useQuery("getPros1Data", () => {
+    axios.get("https://jsonplaceholder.typicode.com/todos/1");
+  });
+
+  useEffect(() => {
+    console.log("useEffect의 data", data);
+  }, []);
+
   return (
     <Layout>
       <BoardList />
