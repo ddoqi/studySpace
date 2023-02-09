@@ -19,6 +19,12 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "pages/writePage.tsx",
+    "pages/testPage.tsxx"
+  ],
   "exclude": ["node_modules"]
 }
