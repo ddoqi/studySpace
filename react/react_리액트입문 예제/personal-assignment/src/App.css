@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
+
+#whole-body {
+  width: 400px;
+  height: 800px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Gowun Dodum", sans-serif;
+  background-color: #161853;
+  color: #faedf0;
+}
+
+input {
+  width: 250px;
+  height: 40px;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+#addBtn {
+  margin-top: 25px;
+  width: 100px;
+  height: 27px;
+  background-color: #4e9525;
+  color: yellow;
+  font-weight: 800;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+#addBtn:hover {
+  background-color: rgb(225, 79, 120);
+  color: white;
+}
+
+#todoList {
+  height: 30px;
+  margin: 0 auto;
+  font-size: 20px;
+  padding: 5px;
+  text-align: left;
+  border-bottom: 3px double white;
+}
+
+#todoListBody {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#deleteBtn {
+  background-color: rgb(188, 45, 100);
+  border: none;
+  color: white;
+  border-radius: 7px;
+  font-size: 12px;
+  color: white;
+  font-weight: 900;
+  font-family: "Gowun Dodum", sans-serif;
+  float: right;
+  margin-top: 3px;
+  height: 23px;
+}
+
+.todo-complete-button {
+  margin-right: 5px;
+  background-color: green;
+  border: none;
+  color: white;
+  border-radius: 7px;
+  font-size: 12px;
+  color: white;
+  font-weight: 900;
+  font-family: "Gowun Dodum", sans-serif;
+  float: right;
+  margin-top: 3px;
+  height: 23px;
+}
+
+.list-wrapper {
+  width: 300px;
+  margin: 0 auto;
+}
